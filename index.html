@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nafi-Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header id="home">
+      <nav>
+        <div class="left"><span class="nafi">Nafi's</span> Portfolio</div>
+        <div class="right"></div>
+        <ul id="sidemenu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact me</a></li>
+          <i class="bi bi-x-circle-fill" onclick="closemenu()"></i>
+        </ul>
+        <i class="bi bi-list" onclick="openmenu()"></i>
+      </nav>
+    </header>
+    <main>
+      <section class="firstSection">
+        <div class="leftSection">
+          Hi,My name is <span class="purple"> Nafi</span>
+          <div>and I am a passionate</div>
+
+          <span id="element"></span>
+        </div>
+        <div class="rightSection">
+          <img src="./developer.png" alt="" />
+        </div>
+      </section>
+
+      <div id="about">
+        <div class="container">
+          <div class="row">
+            <div class="about-col-1">
+              <img src="./assests/nafi.png" alt="" />
+            </div>
+            <div class="about-col-2">
+              <h4 class="sub-title">About Me</h4>
+              <p>
+                As an enthusiastic and dedicated undergraduate student in
+                Computer Science and Engineering from Islamic University of
+                Technology(IUT), I am passionate about exploring and mastering
+                various skills and technologies. I have learned programming
+                languages such as C, C++, and Java. I am also proficient in
+                Arduino, which has sparked my interest in robotics and embedded
+                systems. Beyond programming, I have honed my skills in essential
+                software tools including MS Word, PowerPoint, Canva, AutoCAD and
+                LaTeX. In addition to my technical skills, I have actively
+                participated in extracurricular activities. I have worked with
+                the Notre Dame Math Club and currently I am a general member in
+                the IUT Automobile Society(IUT AUS). I am continually seeking
+                opportunities to learn and grow. I am excited to connect with
+                professionals and peers who share my passion for technology.
+              </p>
+              <div class="tab-title">
+                <p class="tab-links active-link" onclick="opentab('skills')">
+                  Skills
+                </p>
+                <p class="tab-links" onclick="opentab('experience')">
+                  Experience
+                </p>
+                <p class="tab-links" onclick="opentab('education')">
+                  Education
+                </p>
+              </div>
+              <div class="tab-contents active-tab" id="skills">
+                <ul>
+                  <li><span>UI/UX</span><br />Designing Web/App Interfaces</li>
+                  <li><span>Web Development</span><br />Web app development</li>
+                  <li>
+                    <span>App Development</span><br />Building Android app
+                  </li>
+                </ul>
+              </div>
+              <div class="tab-contents" id="experience">
+                <ul>
+                  <li>
+                    <span>2026-Current</span><br />Internship at XYZ Company
+                  </li>
+                  <li>
+                    <span>2022-2026</span><br />General member of IUT Automobile
+                    Society(IUT AUS)
+                  </li>
+                  <li>
+                    <span>2019-2021</span><br />Member of Notre Dame Math Club
+                  </li>
+                </ul>
+              </div>
+              <div class="tab-contents" id="education">
+                <ul>
+                  <li>
+                    <span>2026-Current</span><br />MBA from Dhaka University(DU)
+                  </li>
+                  <li>
+                    <span>2022-2026</span><br />CSE from Islamic University of
+                    Technology(IUT)
+                  </li>
+                  <li>
+                    <span>2019-2021</span><br />HSC from Notre Dame
+                    College,Dhaka
+                  </li>
+                  <li><span>2019</span><br />SSC from RUT High School</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="services">
+        <div class="container">
+          <h1 class="sub-title">My Services</h1>
+          <div class="services-list">
+            <div>
+              <i class="bi bi-code-slash"></i>
+              <h2>Web Design</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
+                natus eligendi explicabo dicta libero ducimus sed, totam ex eos,
+                sit dolorem dolore vitae quaerat fugiat error inventore
+                perspiciatis magni quis?
+              </p>
+              <a href="#">Learn More</a>
+            </div>
+            <div>
+              <i class="bi bi-crop"></i>
+              <h2>UI/UX Design</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
+                natus eligendi explicabo dicta libero ducimus sed, totam ex eos,
+                sit dolorem dolore vitae quaerat fugiat error inventore
+                perspiciatis magni quis?
+              </p>
+              <a href="#">Learn More</a>
+            </div>
+            <div>
+              <i class="bi bi-google-play"></i>
+              <h2>App Design</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
+                natus eligendi explicabo dicta libero ducimus sed, totam ex eos,
+                sit dolorem dolore vitae quaerat fugiat error inventore
+                perspiciatis magni quis?
+              </p>
+              <a href="#">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="projects">
+        <div class="container">
+          <h1 class="sub-title">My Projects</h1>
+          <div class="work-list">
+            <div class="work">
+              <img src="./assests/ecom.png" alt="" />
+              <div class="layer">
+                <h3>ShopEase Ecommerce Website</h3>
+                <p>
+                  This is an e-commerce site for buying and selling products
+                </p>
+                <a
+                  href="https://github.com/Nafi14078/ShopEase-Ecommerce-project"
+                  ><i class="bi bi-box-arrow-up-right"></i
+                ></a>
+              </div>
+            </div>
+            <div class="work">
+              <img src="./assests/weather.png" alt="" />
+              <div class="layer">
+                <h3>Nimbus App</h3>
+                <p>This is a global weather forcasting app</p>
+                <a
+                  href="https://github.com/Nafi14078/Nimbus-A-Global-Weather-Teller"
+                  ><i class="bi bi-box-arrow-up-right"></i
+                ></a>
+              </div>
+            </div>
+            <div class="work">
+              <img src="./assests/Arduino.png" alt="" />
+              <div class="layer">
+                <h3>Arduino Projects</h3>
+                <p>
+                  This is some of the projects doing in Arduino for Robotics
+                  using c++
+                </p>
+                <a href="https://github.com/Nafi14078/Arduino_Projects"
+                  ><i class="bi bi-box-arrow-up-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <a href="https://github.com/Nafi14078" class="btn">See More</a>
+        </div>
+      </div>
+
+      <div id="contact">
+        <div class="container">
+          <div class="row">
+            <div class="contact-left">
+              <h1 class="sub-title">Contact Me</h1>
+              <p><i class="bi bi-send"></i>ashfakazad@iut-dhaka.edu</p>
+              <p><i class="bi bi-telephone"></i>01687700707</p>
+              <div class="social-icons">
+                <a href="https://www.facebook.com/asfaq.nafi"
+                  ><i class="bi bi-facebook"></i
+                ></a>
+                <a href=""><i class="bi bi-twitter-x"></i></a>
+                <a href="https://github.com/Nafi14078"
+                  ><i class="bi bi-github"></i
+                ></a>
+                <a href="www.linkedin.com/in/ashfak-azad-nafi-911829281"
+                  ><i class="bi bi-linkedin"></i
+                ></a>
+              </div>
+              <a href="./assests/Tution post.pdf" download class="btn btn2"
+                >Download CV</a
+              >
+            </div>
+            <div class="contact-right">
+              <form name="submit-to-google-sheet">
+                <input
+                  type="text"
+                  name="Name"
+                  placeholder="Your Name"
+                  required
+                />
+                <input
+                  type="email"
+                  name="Email"
+                  placeholder="Your Email"
+                  required
+                />
+                <textarea
+                  name="Message"
+                  rows="6"
+                  placeholder="Your Message"
+                  required
+                ></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+              </form>
+              <span id="msg"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="copyright">
+        <p>Copyright &copy; Nafi</p>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
