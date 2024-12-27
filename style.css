@@ -340,7 +340,7 @@
         display: none;
       }
 
-      @media only screen and (max-width: 600px) {
+      @media only screen and (max-width: 768px) {
         .header-text {
           margin-top: 100%;
           font-size: 16px;
@@ -348,11 +348,20 @@
         .header-text h1 {
           font-size: 30px;
         }
+        .leftSection{
+          font-size: 25px;
+        }
+        .rightSection img {
+          width: 120%;
+          
+        }
         nav .bi {
           display: block;
           font-size: 25px;
         }
         nav ul {
+          display: flex;
+          flex-direction: column;
           position: fixed;
           top: 0;
           right: -200px; 
@@ -363,6 +372,9 @@
           z-index: 2;
           transition: right 0.5s ease; 
         }
+       i{
+        cursor: pointer;
+       }
         nav ul li {
           display: block;
           margin: 25px;
@@ -376,6 +388,12 @@
         .sub-title {
           font-size: 40px;
         }
+        .about{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
         .about-col-1,
         .about-col-2 {
           flex-basis: 100%;
@@ -383,9 +401,28 @@
         .about-col-1 {
           margin-bottom: 30px;
         }
+        .about-col-1 img {
+          width: 80%;
+          display: block;
+          margin:0 auto;
+
+        }
         .about-col-2 {
           font-size: 14px;
+          display: block;
+          text-align: center;
         }
+      .about-col-2 p{
+        margin-left:2rem;
+        margin-right:2rem;
+        text-align: justify;
+      }
+      .tab-title{
+        margin-top: 5rem;
+        display: flex;
+        justify-content: space-around;
+      }
+      
         .tab-links {
           font-size: 16px;
           margin-right: 20px;
@@ -393,6 +430,17 @@
         .contact-left,
         .contact-right {
           flex-basis: 100%;
+        }
+        .contact-left{
+          text-align:justify;
+        }
+        .contact-left .sub-title{
+          margin-bottom: 2rem;
+        }
+        .btn2 {
+          font-size: 1rem; 
+          padding: 1rem 1rem; 
+          max-width: 80%; 
         }
         .copyright {
           font-size: 14px;
