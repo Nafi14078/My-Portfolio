@@ -2,9 +2,9 @@
       var typed = new Typed("#element", {
         strings: [
           " Student",
-          " Engineer",
-          " Developer",
+          " Full Stack Developer",
           " Programmer",
+          " Software Engineer",
         ],
         typeSpeed: 50,
       });
